@@ -1,0 +1,3 @@
+Error Margin: 3.7%
+SKU Reduction: 80.0%
+Recalc Time: 15ms
