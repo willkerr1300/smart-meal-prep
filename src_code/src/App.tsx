@@ -48,7 +48,7 @@ function App() {
         <div className="container">
             <header>
                 <h1>Smart Meal Prep Manager</h1>
-                <p>AI-Powered Nurtition Planner</p>
+
             </header>
 
             <main>
