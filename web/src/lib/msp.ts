@@ -1,4 +1,4 @@
-import { Recipe, Database } from './database';
+import type { Recipe } from './database';
 
 interface MacroTargets {
     protein: number;
@@ -15,7 +15,11 @@ interface PlanResult {
 }
 
 export class CSPMealGenerator {
-    constructor(private recipes: Recipe[]) { }
+    private recipes: Recipe[];
+
+    constructor(recipes: Recipe[]) {
+        this.recipes = recipes;
+    }
 
     generatePlan(targets: MacroTargets, errorMargin: number = 0.05): PlanResult {
         const { protein: tp, carbs: tc, fat: tf } = targets;

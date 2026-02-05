@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import './App.css';
-import { db, Recipe } from './lib/database';
+import { db, type Recipe } from './lib/database';
 import { CSPMealGenerator, IngredientConsolidator } from './lib/msp';
 
 function App() {
